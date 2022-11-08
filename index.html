@@ -17,25 +17,29 @@
 <body>
      <!-- Верхня лінія -->
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
-        <nav>
-            <ul class="header-nav">
+            <nav class="navigation">
+                <ul class="header-nav">
+                    <li>
+                        <a class="header-nav-link" href="">Студія</a>
+                    </li>
+                    <li><a class="header-nav-link" class="header-nav-link" href="./portfolio.html">Портфоліо</a></li>
+                    <li>
+                        <a class="header-nav-link" href="">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="list header-contact-list">
                 <li>
-                    <a class="header-nav-link" href="">Студія</a>
+                    <a class="header-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li><a class="header-nav-link" class="header-nav-link" href="./portfolio.html">Портфоліо</a></li>
                 <li>
-                    <a class="header-nav-link" href="">Контакти</a>
+                    <a class="header-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
-        </nav>
-        <ul class="list">
-            <li><a class="header-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a class="header-contact-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </div>
-        
+        </div>
+    
     </header>
 
     <!-- Шапка-->
@@ -48,9 +52,10 @@
         </div>
             </section>
     <!--Особливості-->
-    <section>
+    <section class="benefits">
         <!-- <h2>Наші переваги</h2> -->
-        <ul class="benefits list">
+        <div class="container">
+        <ul class="benefits-list">
             <li>
                 <h3 class="benefits-header">УВАГА ДО ДЕТАЛЕЙ</h3>
                 <p class="benefits-text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -68,10 +73,12 @@
                 <p class="benefits-text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
         </ul>
+        </div>
     </section>
        <!--Коробки-->
     
-    <section>
+    <section class="section">
+        <div class="container">
         <h2 class="section-header">Чим ми займаємося</h2>
         <ul class="list">
             <li>
@@ -84,50 +91,68 @@
                 <img src="./images/box-third.jpg" alt="малюнок на планшеті" width="370" height="294">
             </li>
         </ul>
-        <!--Команда-->
+        </div>
     </section>
+        <!--Команда-->
+    
     <section class="team">
         <h2 class="section-header">Наша команда</h2>
+        <div class="container">
         <ul class="list">
-            <li>
+            <li class="parameters">
                 <img src="./images/img.jpg" alt="фото Ігор Дем'яненко" width="270" height="260">
+                <div class="name-profession">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p class="team-position">Product Designer</p>
+                </div>
             </li>
-            <li>
+            <li class="parameters">
                 <img src="./images/img-second.jpg" alt="фото Ольга Рєпіна" width="270" height="260">
+                <div class="name-profession">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p class="team-position">Frontend Developer</p>
+                </div>
             </li>
-            <li>
+            <li class="parameters">
                 <img src="./images/img-third.jpg" alt="фото Микола Тарасов" width="270" height="260">
+                <div class="name-profession">
                 <h3 class="team-name">Микола Тарасов</h3>
                 <p class="team-position">Marketing</p>
+                </div>
             </li>
-            <li>
+            <li class="parameters">
                 <img src="./images/img-fourth.jpg" alt="фото Михайло Єрмаков" width="270" height="260">
+                <div class="name-profession">
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p class="team-position">UI Designer</p>
+                </div>
             </li>
         </ul>
+        </div>
     </section>
      </main>
     <!-- Футер -->
-     <footer class="footer">
-         <div class="container">
-         <a class="logo footer-logo" href="./index.html"><span class="accent">Web</span>Studio</a>
-         <address>
-             <p class="address"> м. Київ, пр-т Лесі Українки, 26</p>
+    <footer class="footer">
+        <div class="container">
+        <a class="footer-logo" href="./index.html"><span class="accent">Web</span>Studio</a>
+        
+            <address class="address">
+                <ul >
+                    <li>
+                    <a class="header-nav-link" href="ссылка google map" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки,26 </a>
+                    </li>
+                    </li>
+                    <li>
+                    <a class="header-nav-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="tel:380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
             </address>
-            <ul class="list footer-list"> 
-                <li>
-                    <a class="header-contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li>
-                    <a class="header-contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-            </ul>
-            </div>
-        </footer>
+        </div>
+    </footer>
     </body>
-</html>
+    </html>
+        
+
