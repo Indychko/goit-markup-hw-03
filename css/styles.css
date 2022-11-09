@@ -93,7 +93,7 @@ margin-left: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
     margin: 0 auto;
     
 }
@@ -342,15 +342,35 @@ padding: 94px 0;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
-        /* text-align: center; */
         letter-spacing: 0.03em;
+        text-align: center;
     color: var(--color-main-dark);
     font-family: inherit;
     border: none;
+    width: 130px;
+        height: 38px;
+        left: 957px;
+        top: 174px;
+    background-color: var(--color-light-gray);
+    border-radius: 4px;
      }
-
+        
+  
+  .varieties {
+        width: 370px;
+        height: 404px;
+        left: 1015px;
+        top: 1130px;
+    
+        background-color: var(--color-white);
+        border: 1px solid #EEEEEE;
+  }
+   
 
 .options-name {
+    margin-top: 20px;
+    margin-bottom: 4px;
+    margin-left: 24px;
        font-weight: 700;
         font-size: 18px;
         line-height: 2;
@@ -359,6 +379,9 @@ padding: 94px 0;
 }
 
 .options-addition {
+    margin-top: 4px;
+    margin-bottom: 20px;
+        margin-left: 24px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
